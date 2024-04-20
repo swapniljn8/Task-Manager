@@ -13,7 +13,7 @@ app.use(express.json())
 app.get('/hello', (req,res) => {
     res.send('Task manager app')
 })
-app.use('/api/v1/tasks',tasks)
+app.use('api/v1/tasks',tasks)
 //app.use(notFound) //order of statement is important, it should be at bottom. it will handle all the 404 request of which there is no route present
 app.use(errorHandlerMiddleware)//apart from un-identified URL if there comes any error it will be handled by this file.
 
