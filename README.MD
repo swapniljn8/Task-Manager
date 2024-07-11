@@ -16,7 +16,9 @@ Briefly describe your project and its purpose.
 - [License](#license)
 
 ## Installation
-
+To run the project in your local 
+npm install - it will install all the dependencies in your local
+npm start - it will start a local server using nodemon - you can directly access http://localhost:3000/ in your browser to run your application.
 
 ## Usage
 User can manage their tasks in this web application
