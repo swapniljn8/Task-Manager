@@ -1,11 +1,11 @@
 const Task = require('../models/model_Task')
 const asyncWrapper = require('../middleware/async')
 const {createCustomError} = require('../errors/custom-error')
-console.log('controller/tasks');
+//console.log('controller/tasks');
 
 const getAllTasks = asyncWrapper(async (req, res) => {
-    const task = await Task.find({})//returns all the task
-    res.status(200).json({ task })
+    const tasks = await Task.find({})//returns all the task
+    res.status(200).json({ tasks })
     //res.status(200).json({success:true,data:{task,amount:task.length}}) //we can also pass like this 
 })
 
