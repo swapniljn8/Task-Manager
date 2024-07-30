@@ -8,7 +8,6 @@ const errorHandlerMiddleware = require('./middleware/error-handler')
 
 //middleware
 app.use(express.static('./public'))
-
 app.use(express.json())
 app.get('/hello', (req,res) => {
     res.send('Task manager app')
