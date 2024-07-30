@@ -14,5 +14,5 @@ const TaskSchema = new mongoose.Schema({
     }
 })
 
-module.exports = mongoose.model('Task',TaskSchema)
+module.exports = mongoose.model('Tasks',TaskSchema)
 //When you call mongoose.model() on a schema, Mongoose compiles a model for you.
