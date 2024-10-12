@@ -1,4 +1,5 @@
 const express = require('express')
+const path = require('path'); // Import the path module
 const app = express()
 const tasks = require('./routes/route_tasks')
 const connectDB = require('./db/connect')
@@ -8,6 +9,7 @@ const errorHandlerMiddleware = require('./middleware/error-handler')
 
 //middleware
 console.log('dirname='+__dirname);
+//app.use(exp.static(path.join(__dirname, 'public'))) 
 app.use(express.static(path.join(__dirname, '/public')))//
 app.use(express.json())
 app.get('/hello', (req,res) => {
