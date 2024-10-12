@@ -7,7 +7,8 @@ require('dotenv').config()
 const errorHandlerMiddleware = require('./middleware/error-handler')
 
 //middleware
-app.use(express.static(path.join(__dirname, 'public')))//
+console.log('dirname='+__dirname);
+app.use(express.static(path.join(__dirname, '/public')))//
 app.use(express.json())
 app.get('/hello', (req,res) => {
     res.send('Task manager app')
